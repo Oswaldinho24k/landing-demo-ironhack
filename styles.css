@@ -23,7 +23,7 @@ White
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;  
+    font-family: 'Roboto', monospace;  
     position: relative;  
 }
 /*Navbar*/
@@ -49,12 +49,19 @@ nav ul {
 
 
 /*all sections*/
+h2{
+    font-family: 'Roboto Mono', monospace; 
+}
+h3{
+    font-family: 'Roboto Mono', monospace; 
+}
 section{
     width: 100%;
     padding:8% 5%;
     text-align: center;
 }
 #general{
+    
     height: 100vh;
     padding: 0;
     background-size: cover;
@@ -63,11 +70,12 @@ section{
     background-image: url('https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/26910863_2117437818485111_1123558402019818654_o.jpg?_nc_cat=0&oh=40af2ac4b309024bc17c05036025357e&oe=5BB2F92D');
 }
 #general p{
-    font-size: 1em;     
+    font-size: 1em;
     font-weight: 100;   
 }
 #general p:first-child{
     font-size: 6em;    
+    font-family: 'Roboto Mono', monospace; 
 }
 #general p:nth-child(2){
     font-size: 3em;    
@@ -87,6 +95,17 @@ section{
     font-size: .6em;           
     margin-bottom: 20px;
 }
+#general  a.linki{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 10%;
+    margin-bottom: -200px;
+}
+#general  a.linki i{
+    font-size: 1.5rem;
+}
+
 
 .cover{
     background-color: rgba(45,53,76,.6);
@@ -136,6 +155,7 @@ section{
 #about h2{
     font-size: 5rem;
     margin-bottom: 20px;
+    font-family: 'Roboto Mono', monospace; 
 }
 
 .numbers h3{
@@ -154,7 +174,7 @@ section{
     
 }
 .moreinfo > div {
-    width: 350px;
+    width: 24%;
     background-color: #2D354C;    
     padding: 3%;
     border-radius: 5px;
@@ -168,7 +188,8 @@ section{
     
 }
 .moreinfo h3{
-    font-size: 1.5rem;    
+    font-size: 1.5rem;   
+    margin-bottom: 10px; 
 }
 .moreinfo i{
     font-size: 2rem;
@@ -181,7 +202,7 @@ section{
 /*footer*/
 
 footer{
-    padding:5% 0;
+    padding:2% 0;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -209,7 +230,10 @@ footer a{
     text-decoration: none;
     color: white;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1rem;
+}
+footer h2{
+    font-family: 'Roboto Mono', monospace; 
 }
 footer a i{
     font-size: 2rem;
@@ -245,7 +269,16 @@ footer a:hover{
     box-shadow: 6px 6px 6px 0px rgba(0,0,0,.5);
     transition:all .2s ease;
 }
-#temario > div:nth-child(4){
+#temario > div:nth-child(1){
+        
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    padding: 0 0 3% 0;
+    box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+    font-size: 2rem;
+}
+#temario > div:nth-child(5){
     padding: 5%;
     width: 100%;
     background-color: transparent;
@@ -272,6 +305,9 @@ footer a:hover{
     filter: opacity(60%);
 }
 /*empresas*/
+#empresas{
+    width: 45%;
+}
 
 #empresas h2{
     font-size: 2.5rem;
@@ -290,6 +326,12 @@ footer a:hover{
 #empresas img{
     width: 200px;
 }
+#profesional{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 #texto{
     background-color: #2DC5FA; 
@@ -297,6 +339,9 @@ footer a:hover{
     padding:3% 10%;
 }
 
+#logos{
+    width: 50%;
+}
 #logos div{    
     display: flex;
     justify-content: space-around;
@@ -305,13 +350,26 @@ footer a:hover{
 }
 
 #logos img{
+    
     width: 200px;
+    transition: all .3s;
 }
+
 
 /*costos*/
 #costos{
     background-color: #2D354C;
     color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#costos div{
+    width: 30%;
+}
+#costos div:nth-child(2){
+    font-size: 3rem;
 }
 
 
@@ -413,6 +471,9 @@ footer a:hover{
         width: 100%;        
         margin-bottom: 10px;
     }
+    #empresas{
+        width: 100%;
+    }
     #empresas h2{
         font-size: 1.5rem;
     }
@@ -428,6 +489,16 @@ footer a:hover{
     }
     footer div{    
         margin-bottom: 10px;     
+    }
+    #costos div{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #costos div:nth-child(2){
+        font-size: 2.5rem;
+    }
+    #logos{
+        width: 100%;
     }
 }
 
