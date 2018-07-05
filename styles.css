@@ -65,7 +65,7 @@ section{
     height: 100vh;
     padding: 0;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-image: url('https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/26910863_2117437818485111_1123558402019818654_o.jpg?_nc_cat=0&oh=40af2ac4b309024bc17c05036025357e&oe=5BB2F92D');
 }
@@ -101,7 +101,7 @@ section{
     color: #fff;
     font-size: 1.2rem;
     margin-top: 10%;
-    margin-bottom: -200px;
+    margin-bottom: -10%;
 }
 #general  a.linki i{
     font-size: 1.5rem;
@@ -154,9 +154,10 @@ section{
     padding: 5%;
 }
 #about h2{
-    font-size: 4rem;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    margin-bottom: 25px;
     font-family: 'Roboto Mono', monospace; 
+
 }
 
 .numbers h3{
@@ -164,7 +165,8 @@ section{
 }
 
 .bestcampus img{
-    width:250px;    
+    width:250px;   
+    margin-bottom: 20px; 
 }
 .bestcampus a:nth-child(1) img{
     width:300px;    
@@ -223,7 +225,7 @@ footer div div {
     flex-direction: column;
     justify-content: space-around;
 }
-footer div:nth-child(2) div{    
+footer div:nth-child(1) div{    
     margin-top: 20px;
     flex-direction: row;    
 }
@@ -297,7 +299,7 @@ footer a:hover{
 }
 /*portada*/
 #portada{
-    background-image: url('https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/26910863_2117437818485111_1123558402019818654_o.jpg?_nc_cat=0&oh=40af2ac4b309024bc17c05036025357e&oe=5BB2F92D');
+    background-image: url('./images/picture.JPG');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -373,9 +375,11 @@ footer a:hover{
     width: 30%;
 }
 #costos div:nth-child(2){
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
-
+#costos div:nth-child(2) p:nth-child(2){
+    font-size: 1rem;
+}
 
 
 
@@ -457,7 +461,7 @@ footer a:hover{
     }
 
     #about h2{
-        font-size: 3rem;
+        font-size: 1.8rem;
         margin-bottom: 10px;
     }
     
@@ -474,6 +478,9 @@ footer a:hover{
     #temario > div{        
         width: 100%;        
         margin-bottom: 10px;
+    }
+    #temario h2{
+        font-size: 1.8rem;
     }
     #empresas{
         width: 100%;
@@ -499,10 +506,14 @@ footer a:hover{
         margin-bottom: 20px;
     }
     #costos div:nth-child(2){
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     #logos{
         width: 100%;
+    }
+    #logos img{
+        margin-top: 10px;
+        width: 200px;    
     }
 }
 
